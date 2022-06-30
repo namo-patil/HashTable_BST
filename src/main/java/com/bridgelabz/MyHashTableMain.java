@@ -4,11 +4,12 @@ public class MyHashTableMain {
     public static void main(String[] args) {
 
         MyHashTable<String, Integer> hashTable = new MyHashTable();
-        String sentence = "To be or not to be";
+        String paragraph = "Paranoids are not paranoid because they are paranoid but " +
+                "because they keep putting themselves deliberately into paranoid avoidable situations";
 
-        String[] sentenceArray = sentence.toLowerCase().split(" ");
+        String[] paragraphArray = paragraph.toLowerCase().split(" ");
 
-        for (String word : sentenceArray) {
+        for (String word : paragraphArray) {
             Integer value = hashTable.get(word);
 
 
