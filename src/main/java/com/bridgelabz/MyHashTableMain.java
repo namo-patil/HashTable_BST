@@ -20,5 +20,7 @@ public class MyHashTableMain {
             hashTable.add(word, value);
         }
         System.out.println(hashTable);
+        hashTable.remove("avoidable");
+        System.out.println(hashTable);
     }
 }
